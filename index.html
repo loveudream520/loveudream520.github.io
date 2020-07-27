@@ -120,7 +120,12 @@ d3.select("svg")
     
 </script>
 
-
+<html>
+<script src='https://d3js.org/d3.v5.min.js'></script>
+<style> circle {fill: lightblue; stroke: black;} </style>
+<body onload='init()'>
+<svg width=300 height=300>
+</svg>
 <script>
     var vis_width = 1366;
     var vis_height = 650;
@@ -140,6 +145,8 @@ d3.select("svg")
     }
   draw(data,vis_width,vis_height,params);
 </script>
+</body>
+</html>
   
 
 
