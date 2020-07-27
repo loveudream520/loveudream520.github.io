@@ -58,27 +58,11 @@ d3.select("svg")
 .call(d3.axisBottom(x).tickValues([10,20,50,100]).tickFormat(d3.format("~s"))) 
 ;
 }
-
-//pie chart
-var data = [4,8,15,16,23,42];
-var color = ['pink','lightyellow','lightgreen','lightcyan','lightblue','violet'];
-var pie = d3.pie();
-var arc = d3.arc().innerRadius(0).outerRadius(100);
-d3.select("svg")
-.append("g")
-.attr("transform","translate(150,150)")
-.selectAll("path")
-.data(pie([4,8,15,16,23,42]))
-.enter()
-.append("path")
-.attr("d",arc)
-.attr("fill",function(d,i) {return color[i];});
-
 </script>
 </body>
 </html>
 
-<!-- <html>
+<html>
 <script src='https://d3js.org/d3.v5.min.js'></script>
 <style> path {stroke: black;}</style>
 <body>
@@ -100,4 +84,4 @@ d3.select("svg")
 .attr("fill",function(d,i) {return color[i];});
 </script>
 </body>
-</html> -->
+</html>
