@@ -15,6 +15,7 @@
 
 <p style="color:black;font-size:14px;font-weight:bold;">Select Your Data</p>
 
+<!-- Add Pie Chart I with Data1/Data2 Option-->
 <!DOCTYPE html>
 <meta charset="utf-8">
 
@@ -101,7 +102,7 @@
     
 </script>
 
-
+<!--Chart 2. Donuts Chart-->
 <!DOCTYPE html>
 <html>
   <head>    
@@ -249,12 +250,10 @@ var 	formatAsPercentage = d3.format("%"),
 -------------------------------------------
 */
 
-
-
 function dsPieChart(){
 
 	var dataset = [
-			{category: "Sam", measure: 0.30},
+		  {category: "Sam", measure: 0.30},
 	      {category: "Peter", measure: 0.25},
 	      {category: "John", measure: 0.15},
 	      {category: "Rick", measure: 0.05},
@@ -264,7 +263,7 @@ function dsPieChart(){
 	      ]
 	      ;
 
-	var 	width = 400,
+	var    width = 400,
 		   height = 400,
 		   outerRadius = Math.min(width, height) / 2,
 		   innerRadius = outerRadius * .999,   
@@ -279,7 +278,7 @@ function dsPieChart(){
 	     .data([dataset])                   //associate our data with the document
 	         .attr("width", width)           //set the width and height of our visualization (these will be attributes of the <svg> tag
 	         .attr("height", height)
-	     		.append("svg:g")                //make a group to hold our pie chart
+	     	 .append("svg:g")                //make a group to hold our pie chart
 	         .attr("transform", "translate(" + outerRadius + "," + outerRadius + ")")    //move the center of the pie chart from 0, 0 to radius, radius
 				;
 				
