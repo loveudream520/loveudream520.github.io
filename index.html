@@ -951,10 +951,10 @@ function buildLineChart(data, title, graph_metric, width, height, xaxislabel, ya
 	var margin = {top: 30, right: 20, bottom: 40, left: 86}, width = width - margin.left - margin.right, height = height - margin.top - margin.bottom;
 
 	//color scale for multiple lines
-	//var colorscale = d3.scale.category10();
-	var colorscale = d3.scale.linear().domain([1,length])
-      .interpolate(d3.interpolateHcl)
-      .range([d3.rgb("#007AFF"), d3.rgb('#FFF500')]);
+	var colorscale = d3.scale.category10();
+	// var colorscale = d3.scale.linear().domain([1,length])
+    //   .interpolate(d3.interpolateHcl)
+    //   .range([d3.rgb("#007AFF"), d3.rgb('#FFF500')]);
 
 	var minDate = getDate(metric[0]),
 	maxDate = getDate(metric[metric.length-1]),
