@@ -1030,7 +1030,8 @@ function buildLineChart(data, title, graph_metric, width, height, xaxislabel, ya
 		vis.append("svg:path")
 			.attr("d", lines[z](metric))
 			.style("stroke", function() { 
-				return colorscale(""+z);
+				//return colorscale(""+z);
+				return colorscale("red", "yellow", "black");
 				
 			})
 			//.style("color", "red")
