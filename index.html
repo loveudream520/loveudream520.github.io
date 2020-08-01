@@ -1335,7 +1335,7 @@ function resetCharts(metrics) {
 	var metric = aggregateMetric(metrics, countries);   // build one metric item out of the selected countries and the full dataset
 	$('#metrics').html(''); 							// reset the metrics div html
 
-	buildLineChart(metric, "All Cases", ['d1_retention_pct', 'd7_retention_pct', 'd30_retention_pct'], 1000, 300, "All Cases (percentage)");
+	buildLineChart(metric, "All Cases", ['d1_retention_pct', 'd7_retention_pct', 'd30_retention_pct'], 1000, 300, "Month", "All Cases (percentage)");
 	buildLineChart(metric, "Daily New Cases", ['DNU'], 500, 300, "Date", "New Cases");
 	buildLineChart(metric, "Average New Case Rate", ['DAU'], 500, 300, "Date", "Cases");
 	buildLineChart(metric, "Average Death Rate", ['average_session_length'], 500, 300, "Date", "Death Rate (%)");
