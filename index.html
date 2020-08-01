@@ -1276,17 +1276,17 @@ function buildConsole(data) {
 	
 }
 
-function createAverages(metric) {
-	for (var i = 1; i < metric.length; i++) {
-		metric[i].increasing_new_cases_pct = safeDivide(metric[i].increasing_new_cases, metric[i].CUM_CASES) * 100;
-		metric[i].increasing_new_deaths_pct = safeDivide(metric[i].increasing_new_deaths, metric[i].CUM_CASES) * 100;
-		metric[i].increasing_new_recovered_pct = safeDivide(metric[i].increasing_new_recovered, metric[i].CUM_CASES) * 100;
+// function createAverages(metric) {
+// 	for (var i = 1; i < metric.length; i++) {
+// 		metric[i].increasing_new_cases_pct = safeDivide(metric[i].increasing_new_cases, metric[i].CUM_CASES) * 100;
+// 		metric[i].increasing_new_deaths_pct = safeDivide(metric[i].increasing_new_deaths, metric[i].CUM_CASES) * 100;
+// 		metric[i].increasing_new_recovered_pct = safeDivide(metric[i].increasing_new_recovered, metric[i].CUM_CASES) * 100;
 
-		metric[i].average_session_length = safeDivide(metric[i].death_rate, metric[i].recover_rate) / 60;
-		metric[i].average_recover_rate_per_user = safeDivide(metric[i].recover_rate, metric[i].NEW_CASE_RATE);
-	}
-	return metric;
-}
+// 		metric[i].average_session_length = safeDivide(metric[i].death_rate, metric[i].recover_rate) / 60;
+// 		metric[i].average_recover_rate_per_user = safeDivide(metric[i].recover_rate, metric[i].NEW_CASE_RATE);
+// 	}
+// 	return metric;
+// }
 
 function getCountries() {
 	var elements = $("input:checkbox[name=countries]:checked");
