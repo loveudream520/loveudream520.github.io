@@ -1095,7 +1095,7 @@ function getData() {
 						
 						{
 							"date"			  : "2020-05",
-							"DAU" 			  : 0.8248,
+							"NEW_CASE_RATE" 			  : 0.8248,
 							"DNU" 			  : 200,
 							"recover_rate" 	  : 0.9637,
 							"death_rate"      : 0.9318,
@@ -1105,7 +1105,7 @@ function getData() {
 						},
 						{
 							"date"			  : "2020-06",
-							"DAU" 			  : 0.3952,
+							"NEW_CASE_RATE" 			  : 0.3952,
 							"DNU" 			  : 300,
 							"recover_rate" 	  : 0.6738,
 							"death_rate"      : 0.3916,
@@ -1115,7 +1115,7 @@ function getData() {
 						},
 						{
 							"date"			  : "2020-07",
-							"DAU" 			  : 0.3297,
+							"NEW_CASE_RATE" 			  : 0.3297,
 							"DNU" 			  : 700,
 							"recover_rate" 	  : 0.5161,
 							"death_rate"      : 0.1858,
@@ -1126,7 +1126,7 @@ function getData() {
 						
 						{
 							"date"			  : "2020-08",
-							"DAU" 			  : 0.4311,
+							"NEW_CASE_RATE" 			  : 0.4311,
 							"DNU" 			  : 300,
 							"recover_rate" 	  : 0.6369,
 							"death_rate"      : 0.1824,
@@ -1143,7 +1143,7 @@ function getData() {
 						
 						{
 							"date"			  : "2020-05",
-							"DAU" 			  : 0.8363,
+							"NEW_CASE_RATE" 			  : 0.8363,
 							"DNU" 			  : 1000,
 							"recover_rate" 	  : 0.9967,
 							"death_rate"      : 0.9039,
@@ -1153,7 +1153,7 @@ function getData() {
 						},
 						{
 							"date"			  : "2020-06",
-							"DAU" 			  : 0.9867,
+							"NEW_CASE_RATE" 			  : 0.9867,
 							"DNU" 			  : 1294,
 							"recover_rate" 	  : 0.8198,
 							"death_rate"      : 0.9861,
@@ -1163,7 +1163,7 @@ function getData() {
 						},
 						{
 							"date"			  : "2020-07",
-							"DAU" 			  : 0.6446,
+							"NEW_CASE_RATE" 			  : 0.6446,
 							"DNU" 			  : 1592,
 							"recover_rate" 	  : 0.7418,
 							"death_rate"      : 0.5165,
@@ -1173,7 +1173,7 @@ function getData() {
 						},
 						{
 							"date"			  : "2020-08",
-							"DAU" 			  : 0.4449,
+							"NEW_CASE_RATE" 			  : 0.4449,
 							"DNU" 			  : 1294,
 							"recover_rate" 	  : 0.5822,
 							"death_rate"      : 0.3356,
@@ -1190,7 +1190,7 @@ function getData() {
 						
 						{
 							"date"			  : "2020-05",
-							"DAU" 			  : 0.9464,
+							"NEW_CASE_RATE" 			  : 0.9464,
 							"DNU" 			  : 596,
 							"recover_rate" 	  : 0.9852,
 							"death_rate"      : 0.9526,
@@ -1200,7 +1200,7 @@ function getData() {
 						},
 						{
 							"date"			  : "2020-06",
-							"DAU" 			  : 0.8045,
+							"NEW_CASE_RATE" 			  : 0.8045,
 							"DNU" 			  : 698,
 							"recover_rate" 	  : 0.8955,
 							"death_rate"      : 0.7819,
@@ -1210,7 +1210,7 @@ function getData() {
 						},
 						{
 							"date"			  : "2020-07",
-							"DAU" 			  : 0.6848,
+							"NEW_CASE_RATE" 			  : 0.6848,
 							"DNU" 			  : 509,
 							"recover_rate" 	  : 0.7339,
 							"death_rate"      : 0.6855,
@@ -1220,7 +1220,7 @@ function getData() {
 						},
 						{
 							"date"			  : "2020-08",
-							"DAU" 			  : 0.6182,
+							"NEW_CASE_RATE" 			  : 0.6182,
 							"DNU" 			  : 698,
 							"recover_rate" 	  : 0.6590,
 							"death_rate"      : 0.5007,
@@ -1283,7 +1283,7 @@ function createAverages(metric) {
 		metric[i].d30_retention_pct = safeDivide(metric[i].d30_retention, metric[i].DNU) * 100;
 
 		metric[i].average_session_length = safeDivide(metric[i].death_rate, metric[i].recover_rate) / 60;
-		metric[i].average_recover_rate_per_user = safeDivide(metric[i].recover_rate, metric[i].DAU);
+		metric[i].average_recover_rate_per_user = safeDivide(metric[i].recover_rate, metric[i].NEW_CASE_RATE);
 	}
 	return metric;
 }
@@ -1338,7 +1338,7 @@ function resetCharts(metrics) {
 
 	buildLineChart(metric, "All Cases", ['d1_retention_pct', 'd7_retention_pct', 'd30_retention_pct'], 1000, 300, "2020", "All Cases (percentage)");
 	buildLineChart(metric, "Daily New Cases", ['DNU'], 500, 300, "2020", "New Cases");
-	buildLineChart(metric, "Average New Case Rate", ['DAU'], 500, 300, "2020", "Cases");
+	buildLineChart(metric, "Average New Case Rate", ['NEW_CASE_RATE'], 500, 300, "2020", "Cases");
 	buildLineChart(metric, "Average Death Rate", ['death_rate'], 500, 300, "2020", "Death Rate (%)");
 	buildLineChart(metric, "Average Recover Rate", ['recover_rate'], 500, 300, "2020", "Recover Rate (%)");
 
