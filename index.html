@@ -1299,9 +1299,9 @@ function resetCharts(metrics) {
 	var metric = aggregateMetric(metrics, countries);   // build one metric item out of the selected countries and the full dataset
 	$('#metrics').html(''); 							// reset the metrics div html
 
-	buildLineChart(metric, "Retention", ['d1_retention_pct', 'd7_retention_pct', 'd30_retention_pct'], 1000, 300, "Date", "Retention (percentage)");
-	buildLineChart(metric, "Daily New Users", ['DNU'], 500, 300, "Date", "New Users");
-	buildLineChart(metric, "Daily Active Users", ['DAU'], 500, 300, "Date", "Users");
+	buildLineChart(metric, "All Cases", ['d1_retention_pct', 'd7_retention_pct', 'd30_retention_pct'], 1000, 300, "Date", "All Cases (percentage)");
+	buildLineChart(metric, "Daily New Cases", ['DNU'], 500, 300, "Date", "New Users");
+	buildLineChart(metric, "Daily Active Cases", ['DAU'], 500, 300, "Date", "Users");
 	buildLineChart(metric, "Average Session Length", ['average_session_length'], 500, 300, "Date", "Session Length (minutes)");
 	buildLineChart(metric, "Average Sessions per User", ['average_sessions_per_user'], 500, 300, "Date", "Sessions per User");
 
