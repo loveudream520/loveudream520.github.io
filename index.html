@@ -1299,37 +1299,37 @@ function getCountries() {
 	return countries;
 }
 
-function aggregateMetric(metrics, countries) {
-	var metric = []; 			 	//the single metric array of dates that we'll return,
-					 			 	//aggregated over the selected countries
-	var count = 0;   			 	// a count of countries being aggregated over
+// function aggregateMetric(metrics, countries) {
+// 	var metric = []; 			 	//the single metric array of dates that we'll return,
+// 					 			 	//aggregated over the selected countries
+// 	var count = 0;   			 	// a count of countries being aggregated over
 
-	for (var i = 0; i < metrics.length; i++) {
-		if (jQuery.inArray(metrics[i][0], countries) > -1) { //this is a country we should aggregate for
-			if (count == 0) {
-				metric = cloneMetric(metrics[i]); // since metric is empty, set metric to the first set of metrics we find
-				count++;
-			} else {
-				metric[0] = metric[0] + metrics[i][0]; //combine the country names for auditing
-				for (var j = 1; j < metric.length; j++) {
-					//iterate through metric[j] object and add metrics[i][j] values to it.
-					//note: this requires that each country has the same number of days' worth of data!
-					for (var key in metrics[i][j]) {
-						if (key != "date") { // don't add the date
-							metric[j][""+key] += metrics[i][j][""+key];
-						}
-					}
-				}
-				count++;
-			}
-		}
-	}
+// 	for (var i = 0; i < metrics.length; i++) {
+// 		if (jQuery.inArray(metrics[i][0], countries) > -1) { //this is a country we should aggregate for
+// 			if (count == 0) {
+// 				metric = cloneMetric(metrics[i]); // since metric is empty, set metric to the first set of metrics we find
+// 				count++;
+// 			} else {
+// 				metric[0] = metric[0] + metrics[i][0]; //combine the country names for auditing
+// 				for (var j = 1; j < metric.length; j++) {
+// 					//iterate through metric[j] object and add metrics[i][j] values to it.
+// 					//note: this requires that each country has the same number of days' worth of data!
+// 					for (var key in metrics[i][j]) {
+// 						if (key != "date") { // don't add the date
+// 							metric[j][""+key] += metrics[i][j][""+key];
+// 						}
+// 					}
+// 				}
+// 				count++;
+// 			}
+// 		}
+// 	}
 
-	metric = createAverages(metric); //create the averaged values from the counts 
-									 //(like retention metrics, average session length, etc.)
+// 	metric = createAverages(metric); //create the averaged values from the counts 
+// 									 //(like retention metrics, average session length, etc.)
 
-	return metric;
-}
+// 	return metric;
+// }
 
 function resetCharts(metrics) {
 	var countries = getCountries(); 					// get checked items
