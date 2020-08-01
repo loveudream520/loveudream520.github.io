@@ -1276,17 +1276,17 @@ function buildConsole(data) {
 	
 }
 
-function createAverages(metric) {
-	for (var i = 1; i < metric.length; i++) {
-		metric[i].d1_retention_pct = safeDivide(metric[i].d1_retention, metric[i].DNU) * 100;
-		metric[i].d7_retention_pct = safeDivide(metric[i].d7_retention, metric[i].DNU) * 100;
-		metric[i].d30_retention_pct = safeDivide(metric[i].d30_retention, metric[i].DNU) * 100;
+// function createAverages(metric) {
+// 	for (var i = 1; i < metric.length; i++) {
+// 		metric[i].d1_retention_pct = safeDivide(metric[i].d1_retention, metric[i].DNU) * 100;
+// 		metric[i].d7_retention_pct = safeDivide(metric[i].d7_retention, metric[i].DNU) * 100;
+// 		metric[i].d30_retention_pct = safeDivide(metric[i].d30_retention, metric[i].DNU) * 100;
 
-		metric[i].average_session_length = safeDivide(metric[i].sessions_length, metric[i].sessions) / 60;
-		metric[i].average_sessions_per_user = safeDivide(metric[i].sessions, metric[i].DAU);
-	}
-	return metric;
-}
+// 		metric[i].average_session_length = safeDivide(metric[i].sessions_length, metric[i].sessions) / 60;
+// 		metric[i].average_sessions_per_user = safeDivide(metric[i].sessions, metric[i].DAU);
+// 	}
+// 	return metric;
+// }
 
 function getCountries() {
 	var elements = $("input:checkbox[name=countries]:checked");
