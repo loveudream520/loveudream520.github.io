@@ -51,6 +51,15 @@
       .append("g")
       .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
     
+</script>
+
+<html>
+<script src='https://d3js.org/d3.v5.min.js'></script>
+<style> circle {fill: lightblue; stroke: black;} </style>
+<body onload='init()'>
+<svg width=300 height=300>
+</svg>
+<script>
 async function init() {
 const data = await d3.csv('https://loveudream520.github.io/cars2017.csv');
 console.log(data);
@@ -89,9 +98,10 @@ d3.select("svg")
 .attr("transform", "translate(" + margin + "," + (height+margin) + ")")
 .call(d3.axisBottom(x).tickValues([10,20,50,100]).tickFormat(d3.format("~s"))) 
 ;
-}	
-  
+}
 </script>
+</body>
+</html>
 
 <!--Chart 2. Donuts Chart-->
 <!DOCTYPE html>
