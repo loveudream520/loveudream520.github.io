@@ -1336,10 +1336,10 @@ function resetCharts(metrics) {
 	$('#metrics').html(''); 							// reset the metrics div html
 
 	buildLineChart(metric, "All Cases", ['d1_retention_pct', 'd7_retention_pct', 'd30_retention_pct'], 1000, 300, "2020", "All Cases (percentage)");
-	buildLineChart(metric, "Daily New Cases", ['DNU'], 500, 300, "Date", "New Cases");
-	buildLineChart(metric, "Average New Case Rate", ['DAU'], 500, 300, "Date", "Cases");
-	buildLineChart(metric, "Average Death Rate", ['average_session_length'], 500, 300, "Date", "Death Rate (%)");
-	buildLineChart(metric, "Average Recover Rate", ['average_sessions_per_user'], 500, 300, "Date", "Recover Rate (%)");
+	buildLineChart(metric, "Daily New Cases", ['DNU'], 500, 300, "2020", "New Cases");
+	buildLineChart(metric, "Average New Case Rate", ['DAU'], 500, 300, "2020", "Cases");
+	buildLineChart(metric, "Average Death Rate", ['average_session_length'], 500, 300, "2020", "Death Rate (%)");
+	buildLineChart(metric, "Average Recover Rate", ['average_sessions_per_user'], 500, 300, "2020", "Recover Rate (%)");
 
 }
 
