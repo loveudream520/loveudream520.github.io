@@ -1096,7 +1096,7 @@ function getData() {
 						{
 							"date"			  : "2020-05",
 							"NEW_CASE_RATE" 			  : 0.8248,
-							"CUM_NEW_CASES" 			  : 200,
+							"CUM_CASES" 			  : 200,
 							"recover_rate" 	  : 0.9637,
 							"death_rate"      : 0.9318,
 							"d1_retention"    : 102,
@@ -1106,7 +1106,7 @@ function getData() {
 						{
 							"date"			  : "2020-06",
 							"NEW_CASE_RATE" 			  : 0.3952,
-							"CUM_NEW_CASES" 			  : 300,
+							"CUM_CASES" 			  : 300,
 							"recover_rate" 	  : 0.6738,
 							"death_rate"      : 0.3916,
 							"d1_retention"    : 82,
@@ -1116,7 +1116,7 @@ function getData() {
 						{
 							"date"			  : "2020-07",
 							"NEW_CASE_RATE" 			  : 0.3297,
-							"CUM_NEW_CASES" 			  : 700,
+							"CUM_CASES" 			  : 700,
 							"recover_rate" 	  : 0.5161,
 							"death_rate"      : 0.1858,
 							"d1_retention"    : 285,
@@ -1127,7 +1127,7 @@ function getData() {
 						{
 							"date"			  : "2020-08",
 							"NEW_CASE_RATE" 			  : 0.4311,
-							"CUM_NEW_CASES" 			  : 300,
+							"CUM_CASES" 			  : 300,
 							"recover_rate" 	  : 0.6369,
 							"death_rate"      : 0.1824,
 							"d1_retention"    : 82,
@@ -1144,7 +1144,7 @@ function getData() {
 						{
 							"date"			  : "2020-05",
 							"NEW_CASE_RATE" 			  : 0.8363,
-							"CUM_NEW_CASES" 			  : 1000,
+							"CUM_CASES" 			  : 1000,
 							"recover_rate" 	  : 0.9967,
 							"death_rate"      : 0.9039,
 							"d1_retention"    : 948,
@@ -1154,7 +1154,7 @@ function getData() {
 						{
 							"date"			  : "2020-06",
 							"NEW_CASE_RATE" 			  : 0.9867,
-							"CUM_NEW_CASES" 			  : 1294,
+							"CUM_CASES" 			  : 1294,
 							"recover_rate" 	  : 0.8198,
 							"death_rate"      : 0.9861,
 							"d1_retention"    : 1029,
@@ -1164,7 +1164,7 @@ function getData() {
 						{
 							"date"			  : "2020-07",
 							"NEW_CASE_RATE" 			  : 0.6446,
-							"CUM_NEW_CASES" 			  : 1592,
+							"CUM_CASES" 			  : 1592,
 							"recover_rate" 	  : 0.7418,
 							"death_rate"      : 0.5165,
 							"d1_retention"    : 1349,
@@ -1174,7 +1174,7 @@ function getData() {
 						{
 							"date"			  : "2020-08",
 							"NEW_CASE_RATE" 			  : 0.4449,
-							"CUM_NEW_CASES" 			  : 1294,
+							"CUM_CASES" 			  : 1294,
 							"recover_rate" 	  : 0.5822,
 							"death_rate"      : 0.3356,
 							"d1_retention"    : 1029,
@@ -1191,7 +1191,7 @@ function getData() {
 						{
 							"date"			  : "2020-05",
 							"NEW_CASE_RATE" 			  : 0.9464,
-							"CUM_NEW_CASES" 			  : 596,
+							"CUM_CASES" 			  : 596,
 							"recover_rate" 	  : 0.9852,
 							"death_rate"      : 0.9526,
 							"d1_retention"    : 294,
@@ -1201,7 +1201,7 @@ function getData() {
 						{
 							"date"			  : "2020-06",
 							"NEW_CASE_RATE" 			  : 0.8045,
-							"CUM_NEW_CASES" 			  : 698,
+							"CUM_CASES" 			  : 698,
 							"recover_rate" 	  : 0.8955,
 							"death_rate"      : 0.7819,
 							"d1_retention"    : 304,
@@ -1211,7 +1211,7 @@ function getData() {
 						{
 							"date"			  : "2020-07",
 							"NEW_CASE_RATE" 			  : 0.6848,
-							"CUM_NEW_CASES" 			  : 509,
+							"CUM_CASES" 			  : 509,
 							"recover_rate" 	  : 0.7339,
 							"death_rate"      : 0.6855,
 							"d1_retention"    : 295,
@@ -1221,7 +1221,7 @@ function getData() {
 						{
 							"date"			  : "2020-08",
 							"NEW_CASE_RATE" 			  : 0.6182,
-							"CUM_NEW_CASES" 			  : 698,
+							"CUM_CASES" 			  : 698,
 							"recover_rate" 	  : 0.6590,
 							"death_rate"      : 0.5007,
 							"d1_retention"    : 304,
@@ -1278,9 +1278,9 @@ function buildConsole(data) {
 
 function createAverages(metric) {
 	for (var i = 1; i < metric.length; i++) {
-		metric[i].d1_retention_pct = safeDivide(metric[i].d1_retention, metric[i].CUM_NEW_CASES) * 100;
-		metric[i].d7_retention_pct = safeDivide(metric[i].d7_retention, metric[i].CUM_NEW_CASES) * 100;
-		metric[i].d30_retention_pct = safeDivide(metric[i].d30_retention, metric[i].CUM_NEW_CASES) * 100;
+		metric[i].d1_retention_pct = safeDivide(metric[i].d1_retention, metric[i].CUM_CASES) * 100;
+		metric[i].d7_retention_pct = safeDivide(metric[i].d7_retention, metric[i].CUM_CASES) * 100;
+		metric[i].d30_retention_pct = safeDivide(metric[i].d30_retention, metric[i].CUM_CASES) * 100;
 
 		metric[i].average_session_length = safeDivide(metric[i].death_rate, metric[i].recover_rate) / 60;
 		metric[i].average_recover_rate_per_user = safeDivide(metric[i].recover_rate, metric[i].NEW_CASE_RATE);
@@ -1337,7 +1337,7 @@ function resetCharts(metrics) {
 	$('#metrics').html(''); 							// reset the metrics div html
 
 	buildLineChart(metric, "All Cases", ['d1_retention_pct', 'd7_retention_pct', 'd30_retention_pct'], 1000, 300, "2020", "All Cases (percentage)");
-	buildLineChart(metric, "Daily New Cases", ['CUM_NEW_CASES'], 500, 300, "2020", "New Cases");
+	buildLineChart(metric, "Daily New Cases", ['CUM_CASES'], 500, 300, "2020", "New Cases");
 	buildLineChart(metric, "Average New Case Rate", ['NEW_CASE_RATE'], 500, 300, "2020", "Cases");
 	buildLineChart(metric, "Average Death Rate", ['death_rate'], 500, 300, "2020", "Death Rate (%)");
 	buildLineChart(metric, "Average Recover Rate", ['recover_rate'], 500, 300, "2020", "Recover Rate (%)");
