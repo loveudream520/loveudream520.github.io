@@ -1025,7 +1025,7 @@ function buildLineChart(data, title, graph_metric, width, height, xaxislabel, ya
 		lines[z] = d3.svg.line()
 			.x(function(d) { return x(getDate(d)); })
 			.y(function(d) { return (isNaN( y(d[''+graph_metric[z]])) ? 0 : y(d[''+graph_metric[z]])); })
-			.style("color", "red")
+			
 		
 		vis.append("svg:path")
 			.attr("d", lines[z](metric))
