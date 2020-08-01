@@ -1,0 +1,49 @@
+Country,Race,Death
+California,White,2318
+California,Black,654
+California,Latino,3386
+California,Asian,998
+California,Unknown,1860
+California,All,9216
+Florida,White,2451
+Florida,Black,1031
+Florida,Latino,1327
+Florida,Asian,32
+Florida,Unknown,2002
+Florida,All,6843
+Texas,White,1033
+Texas,Black,504
+Texas,Latino,1038
+Texas,Asian,80
+Texas,Unknown,3914
+Texas,All,6569
+New York,White,9687
+New York,Black,7604
+New York,Latino,7659
+New York,Asian,2079
+New York,Unknown,5660
+New York,All,32689
+Georgia,White,1463
+Georgia,Black,1488
+Georgia,Latino,189
+Georgia,Asian,51
+Georgia,Unknown,561
+Georgia,All,3752
+New Jersey,White,5835
+New Jersey,Black,2029
+New Jersey,Latino,2125
+New Jersey,Asian,597
+New Jersey,Unknown,5319
+New Jersey,All,15905
+Illinois,White,3253
+Illinois,Black,2018
+Illinois,Latino,1530
+Illinois,Asian,349
+Illinois,Unknown,346
+Illinois,All,7496
+US,White,65950
+US,Black,29946
+US,Latino,22226
+US,Asian,5552
+US,Unknown,32228
+US,All,155902
