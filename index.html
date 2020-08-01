@@ -1027,7 +1027,9 @@ function buildLineChart(data, title, graph_metric, width, height, xaxislabel, ya
 			.attr("d", lines[z](metric))
 			.style("stroke", function() { 
 				return colorscale(""+z);
+				
 			})
+			.style("color", "red")
 			.style("fill", "none")
 			.style("stroke-width", "2.5");
 	
