@@ -1301,9 +1301,9 @@ function resetCharts(metrics) {
 
 	buildLineChart(metric, "All Cases", ['d1_retention_pct', 'd7_retention_pct', 'd30_retention_pct'], 1000, 300, "Date", "All Cases (percentage)");
 	buildLineChart(metric, "Daily New Cases", ['DNU'], 500, 300, "Date", "New Users");
-	buildLineChart(metric, "Daily Active Cases", ['DAU'], 500, 300, "Date", "Users");
-	buildLineChart(metric, "Average Session Length", ['average_session_length'], 500, 300, "Date", "Session Length (minutes)");
-	buildLineChart(metric, "Average Sessions per User", ['average_sessions_per_user'], 500, 300, "Date", "Sessions per User");
+	buildLineChart(metric, "Average New Case Rate", ['DAU'], 500, 300, "Date", "Users");
+	buildLineChart(metric, "Average Death Rate", ['average_session_length'], 500, 300, "Date", "Session Length (minutes)");
+	buildLineChart(metric, "Average Fatality Rate", ['average_sessions_per_user'], 500, 300, "Date", "Sessions per User");
 
 }
 
