@@ -1,49 +1,49 @@
-Country,Race,Death
-California,White,2318
-California,Black,654
-California,Latino,3386
-California,Asian,998
-California,Unknown,1860
-California,All,9216
-Florida,White,2451
-Florida,Black,1031
-Florida,Latino,1327
-Florida,Asian,32
-Florida,Unknown,2002
-Florida,All,6843
-Texas,White,1033
-Texas,Black,504
-Texas,Latino,1038
-Texas,Asian,80
-Texas,Unknown,3914
-Texas,All,6569
-New York,White,9687
-New York,Black,7604
-New York,Latino,7659
-New York,Asian,2079
-New York,Unknown,5660
-New York,All,32689
-Georgia,White,1463
-Georgia,Black,1488
-Georgia,Latino,189
-Georgia,Asian,51
-Georgia,Unknown,561
-Georgia,All,3752
-New Jersey,White,5835
-New Jersey,Black,2029
-New Jersey,Latino,2125
-New Jersey,Asian,597
-New Jersey,Unknown,5319
-New Jersey,All,15905
-Illinois,White,3253
-Illinois,Black,2018
-Illinois,Latino,1530
-Illinois,Asian,349
-Illinois,Unknown,346
-Illinois,All,7496
-US,White,65950
-US,Black,29946
-US,Latino,22226
-US,Asian,5552
-US,Unknown,32228
-US,All,155902
+Country,Race,Death,Tot_Population,Fatality
+California,White,2318,14616636,0.016%
+California,Black,654,2164239,0.030%
+California,Latino,3386,15477306,0.022%
+California,Asian,998,5679986,0.018%
+California,Unknown,1860,1598486,0.116%
+California,All,9216,39536653,0.023%
+Florida,White,2451,11288419,0.022%
+Florida,Black,1031,3224452,0.032%
+Florida,Latino,1327,5370860,0.025%
+Florida,Asian,32,578136,0.006%
+Florida,Unknown,2002,522533,0.383%
+Florida,All,6843,20984400,0.033%
+Texas,White,1033,11855092,0.009%
+Texas,Black,504,3330204,0.015%
+Texas,Latino,1038,11158751,0.009%
+Texas,Asian,80,1344963,0.006%
+Texas,Unknown,3914,615586,0.636%
+Texas,All,6569,28304596,0.023%
+New York,White,9687,10936578,0.089%
+New York,Black,7604,2846481,0.267%
+New York,Latino,7659,3811654,0.201%
+New York,Asian,2079,1718948,0.121%
+New York,Unknown,5660,535738,1.056%
+New York,All,32689,19849399,0.165%
+Georgia,White,1463,5487048,0.027%
+Georgia,Black,1488,3245371,0.046%
+Georgia,Latino,189,1001472,0.019%
+Georgia,Asian,51,408067,0.012%
+Georgia,Unknown,561,287421,0.195%
+Georgia,All,3752,10429379,0.036%
+New Jersey,White,5835,4939479,0.118%
+New Jersey,Black,2029,1148321,0.177%
+New Jersey,Latino,2125,1840433,0.115%
+New Jersey,Asian,597,882064,0.068%
+New Jersey,Unknown,5319,195347,2.723%
+New Jersey,All,15905,9005644,0.177%
+Illinois,White,3253,7834272,0.042%
+Illinois,Black,2018,1790512,0.113%
+Illinois,Latino,1530,2206927,0.069%
+Illinois,Asian,349,689701,0.051%
+Illinois,Unknown,346,280611,0.123%
+Illinois,All,7496,12802023,0.059%
+US,White,65950,197285202,0.033%
+US,Black,29946,40129593,0.075%
+US,Latino,22226,58846134,0.038%
+US,Asian,5552,17999846,0.031%
+US,Unknown,32228,11458403,0.050%
+US,All,155902,325719178,0.048%
