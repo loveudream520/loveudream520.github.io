@@ -617,48 +617,47 @@ function updateBarChart(group, colorChosen) {
 ############# LINE CHART ##################
 -------------------------------------------
 */
-
 var datasetLineChart = [
-{ group: "All", category: "White_fatality", measure: 289309 }, 
-{ group: "All", category: "Black_fatality", measure: 234998 }, 
-{ group: "All", category: "Latino_fatality", measure: 310900 }, 
-{ group: "All", category: "Asian_fatality", measure: 223900 }, 
-{ group: "All", category: "All_fatality", measure: 155902 }, 
-{ group: "California", category: "White_fatality", measure: 81006.52 }, 
-{ group: "California", category: "Black_fatality", measure: 70499.4 }, 
-{ group: "California", category: "Latino_fatality", measure: 96379 }, 
-{ group: "California", category: "Asian_fatality", measure: 64931 }, 
-{ group: "California", category: "All_fatality", measure: 9216 }, 
-{ group: "Florida", category:  "White_fatality", measure: 63647.98 }, 
-{ group: "Florida", category: "Black_fatality", measure: 61099.48 }, 
-{ group: "Florida", category: "Latino_fatality", measure: 87052 }, 
-{ group: "Florida", category: "Asian_fatality", measure: 58214 }, 
-{ group: "Florida", category: "All_fatality", measure: 6843 }, 
-{ group: "Georgia", category:  "White_fatality", measure: 23144.72 }, 
-{ group: "Georgia", category: "Black_fatality", measure: 14099.88 }, 
-{ group: "Georgia", category: "Latino_fatality", measure: 15545 }, 
-{ group: "Georgia", category: "Asian_fatality", measure: 11195 }, 
-{ group: "Georgia", category: "All_fatality", measure: 3752 }, 
-{ group: "New York", category:  "White_fatality", measure: 34717.08 }, 
-{ group: "New York", category: "Black_fatality", measure: 30549.74 }, 
-{ group: "New York", category: "Latino_fatality", measure: 34199 }, 
-{ group: "New York", category: "Asian_fatality", measure: 33585 }, 
-{ group: "New York", category: "All_fatality", measure: 32689 }, 
-{ group: "Texas", category:  "White_fatality", measure: 69434.16 }, 
-{ group: "Texas", category: "Black_fatality", measure: 46999.6 }, 
-{ group: "Texas", category: "Latino_fatality", measure: 62180 }, 
-{ group: "Texas", category: "Asian_fatality", measure: 40302 }, 
-{ group: "Texas", category: "All_fatality", measure: 6569 }, 
-{ group: "New Jersey", category:  "White_fatality", measure: 7232.725 }, 
-{ group: "New Jersey", category: "Black_fatality", measure: 4699.96 }, 
-{ group: "New Jersey", category: "Latino_fatality", measure: 6218 }, 
-{ group: "New Jersey", category: "Asian_fatality", measure: 8956 }, 
-{ group: "New Jersey", category: "All_fatality", measure: 15905 }, 
-{ group: "Illinois", category:  "White_fatality", measure: 10125.815 }, 
-{ group: "Illinois", category: "Black_fatality", measure: 7049.94 }, 
-{ group: "Illinois", category: "Latino_fatality", measure: 9327 }, 
-{ group: "Illinois", category: "Asian_fatality", measure: 6717 }, 
-{ group: "Illinois", category: "All_fatality", measure: 7496 }
+{ group: "All", category: "White_fatality", measure: 0.033}, 
+{ group: "All", category: "Black_fatality", measure: 0.075 }, 
+{ group: "All", category: "Latino_fatality", measure: 0.038}, 
+{ group: "All", category: "Asian_fatality", measure: 0.031 }, 
+{ group: "All", category: "All_fatality", measure: 0.048 }, 
+{ group: "California", category: "White_fatality", measure: 0.016}, 
+{ group: "California", category: "Black_fatality", measure: 0.030 }, 
+{ group: "California", category: "Latino_fatality", measure: 0.022 }, 
+{ group: "California", category: "Asian_fatality", measure: 0.018 }, 
+{ group: "California", category: "All_fatality", measure: 0.023}, 
+{ group: "Florida", category:  "White_fatality", measure: 0.022 }, 
+{ group: "Florida", category: "Black_fatality", measure: 0.032 }, 
+{ group: "Florida", category: "Latino_fatality", measure: 0.025 }, 
+{ group: "Florida", category: "Asian_fatality", measure: 0.006}, 
+{ group: "Florida", category: "All_fatality", measure: 0.033 }, 
+{ group: "Georgia", category:  "White_fatality", measure: 0.027}, 
+{ group: "Georgia", category: "Black_fatality", measure: 0.046}, 
+{ group: "Georgia", category: "Latino_fatality", measure: 0.019 }, 
+{ group: "Georgia", category: "Asian_fatality", measure: 0.012 }, 
+{ group: "Georgia", category: "All_fatality", measure: 0.036}, 
+{ group: "New York", category:  "White_fatality", measure: 0.089 }, 
+{ group: "New York", category: "Black_fatality", measure: 0.267}, 
+{ group: "New York", category: "Latino_fatality", measure: 0.201}, 
+{ group: "New York", category: "Asian_fatality", measure: 0.121 }, 
+{ group: "New York", category: "All_fatality", measure: 0.165}, 
+{ group: "Texas", category:  "White_fatality", measure: 0.009}, 
+{ group: "Texas", category: "Black_fatality", measure: 0.015 }, 
+{ group: "Texas", category: "Latino_fatality", measure: 0.009 }, 
+{ group: "Texas", category: "Asian_fatality", measure: 0.006 }, 
+{ group: "Texas", category: "All_fatality", measure: 0.023 }, 
+{ group: "New Jersey", category:  "White_fatality", measure: 0.118}, 
+{ group: "New Jersey", category: "Black_fatality", measure: 0.177}, 
+{ group: "New Jersey", category: "Latino_fatality", measure: 0.115}, 
+{ group: "New Jersey", category: "Asian_fatality", measure: 0.068}, 
+{ group: "New Jersey", category: "All_fatality", measure: 0.177 }, 
+{ group: "Illinois", category:  "White_fatality", measure: 0.042}, 
+{ group: "Illinois", category: "Black_fatality", measure: 0.113 }, 
+{ group: "Illinois", category: "Latino_fatality", measure: 0.069}, 
+{ group: "Illinois", category: "Asian_fatality", measure: 0.051}, 
+{ group: "Illinois", category: "All_fatality", measure: 0.059}
 ]
 ;
 
@@ -760,11 +759,11 @@ function dsLineChart() {
 	    .attr("r", 3.5)
 	    .attr("stroke", "lightgrey")
 	    .append("title")
-	    .text(function(d) { return "fatality" + ": " + formatAsInteger(d.measure); })
+	    .text(function(d) { return "fatality" + ": " + formatAsInteger(d.measure) + "%"; })
 	    ;
 
 	svg.append("text")
-		.text("Fatality")
+		.text("Overall Fatality Rate (%)")
 		.attr("id","lineChartTitle1")	
 		.attr("x",margin.left + ((width + margin.right)/2))
 		.attr("y", 12)
